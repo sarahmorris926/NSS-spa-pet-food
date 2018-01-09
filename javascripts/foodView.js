@@ -5,7 +5,7 @@ const _startCase = require('lodash.startcase');
 
 // loop through first array
 module.exports.displayFood = (dogData) => {
-  dogData.dog_brands.forEach( (brand) => {
+  dogData.forEach( (brand) => {
     console.log(brand);
     let $dogFood = $('#dogFood');
     $dogFood.append(`<h3>${_startCase(brand.name)}</h3>`);

@@ -1,13 +1,6 @@
 'use strict';
 
-let test = require('./foodFactory');
-let foodView = require('./foodView');
+const foodCtrl = require('./foodController');
 
-test.fetchDogFood()
-.then( (dogData) => {
-  console.log('dogData where u go?', dogData);
-});
-
-
-
+foodCtrl.outputFood();
 
